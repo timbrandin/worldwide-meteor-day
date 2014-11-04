@@ -97,7 +97,15 @@
     <section id="about" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>About</h2>
+                <h2>Join us and <u>3,583</u> Meteorites on November&nbsp;6,&nbsp;2014 in <u>{{citiesCount}}</u> cities:</h2>
+
+                {{> groupsWorldmapCached}}
+
+                <p>
+                    <a target="_blank" href="http://twitter.com/home?status=Join%20me%20and%203%2C318%20Meteorites%20this%20Thursday%20%0Ain%20120%2B%20cities%20for%20celebration%20of%20%40meteorjs%201.0!%20%0Ahttp%3A%2F%2Fmeteorday.com%2F%20%23MeteorDay" class="btn btn-default btn-lg">Tweet about it</a>
+                </p>
+
+                <!-- <h2>About</h2> -->
                 <p>
                     Come join us for Worldwide Meteor Day — an open house launch event hosted by local Meteor developers all over the world.
                 </p>
@@ -110,7 +118,6 @@
 
                 <p>If you’re already a Meteor developer, Meteor Day is a time to meet other Meteorites, demo what you’ve built, introduce a friend into the community, and just plain celebrate!</p>
                 <h3><a href="https://twitter.com/search?q=%23MeteorDay" target="_blank">#MeteorDay</a></h3>
-                <a target="_blank" href="http://twitter.com/home?status=Celebrate%20%40meteorjs%201.0%20release%20with%20awesome%20Meteor%20community%20in%20110%2B%20cities!%0Ahttp%3A%2F%2Fmeteorday.com%2F%0A%23MeteorDay" class="btn btn-default btn-lg">Tweet about it</a>
             </div>
         </div>
     </section>
@@ -119,10 +126,7 @@
     <section id="attend" class="content-section text-center">
         <div class="container">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Join us and <u>2,853</u> Meteorites on November&nbsp;6,&nbsp;2014 in <u>{{citiesCount}}</u> cities:</h2>
-
-                {{> groupsWorldmap}}
-
+                <h1>List of participating cities</h1>
                 <!-- <h3><a target="_blank" href=""></a></h3> -->
                 <h2>North America</h2>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Ann-Arbor/events/212839752/">Ann Arbor</a></h3>
@@ -144,14 +148,17 @@
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Hudson-Valley/events/211258902/">Hudson-Valley</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Kansas-City/events/216783582/">Kansas City, MO</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Hawaii/events/216883692/">Kauai, HI</a></h3>
+                <h3><a target="_blank" href="http://www.meetup.com/Meteor-Lafayette/events/217113602/">Lafayette, IN</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Las-Vegas/events/212820662/">Las Vegas</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-LA/events/216181752/">Los Angeles, CA</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Minneapolis/events/209674882/">Minneapolis</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Mobile-AL/events/215990332/">Mobile, AL</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Montreal/events/215522682/">Montreal, QC</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Nashville/events/213777152/">Nashville</a></h3>
+                <h3><a target="_blank" href="http://www.meetup.com/Meteor-New-Haven/events/217063962/">New Haven, CT</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-NY/events/212304662/">New York</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Norfolk/events/213228112/">Norfolk, VA</a></h3>
+                <h3><a target="_blank" href="http://www.meetup.com/Meteor-Ottawa/events/217269002/">Ottawa, ON</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Portland/events/215188132/">Portland, OR</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Philadelphia/events/207919652/">Philadelphia</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Phoenix/events/213434942/">Phoenix, AZ</a></h3>
@@ -185,6 +192,7 @@
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Budapest/events/214211572/">Budapest, Hungary</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Copenhagen/events/209821902/">Copenhagen, Denmark</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Edinburgh/events/216556482/">Edinburgh, United Kingdom</a></h3>
+                <h3><a target="_blank" href="http://www.meetup.com/Meteor-Gliwice/events/217310032/">Gliwice, Poland</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Goteborg/events/213776692/">Göteborg, Sweden</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Hamburg/events/200666622/">Hamburg, Germany</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Iasi">Iasi, Romania</a></h3>
@@ -222,16 +230,20 @@
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Kyrgyzstan/events/216515162/">Bishkek, Kyrgyzstan</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Chennai/events/216810082/">Chennai, India</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Dhaka/events/216811192/">Dhaka, Bangladesh</a></h3>
+                <h3><a target="_blank" href="http://www.meetup.com/Meteor-Dubai/events/217096382/">Dubai, U.A.E.</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Vietnam/events/216902692/">Hanoi, Vietnam</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-HK/events/213330512/">Hong Kong, Hong Kong</a></h3>
+                <h3><a target="_blank" href="http://www.meetup.com/Meteor-Hyderabad/events/217282782/">Hyderabad, India</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Jakarta/events/213790002/">Jakarta, Indonesia</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Mumbai/events/211252492/">Mumbai, India</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Nepal/events/212742832/">Pokhara, Nepal</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Seoul/events/212745182/">Seoul, South Korea</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Singapore/events/213820092/">Singapore, Singapore</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Taipei/events/213779732/">Taipei, Taiwan</a></h3>
+                <h3><a target="_blank" href="http://www.meetup.com/Meteor-Tokyo/events/217535282/">Tokyo, Japan</a></h3>
                 <br>
                 <h2>South America</h2>
+                <h3><a target="_blank" href="http://www.meetup.com/Meteor-Belo-Horizonte/events/217439722/">Belo Horizonte, Brazil</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Brasilia/events/216862002/">Brasília, Brazil</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Buenos-Aires/events/193642162/">Buenos Aires</a></h3>
                 <h3><a target="_blank" href="http://www.meetup.com/Meteor-Colombia/events/215774012/">Popayan, Colombia</a></h3>
